@@ -13,7 +13,8 @@ document.onkeyup = function (event) {
     //Make a variable for the user when a key is pressed via document.onkeyup.
     var userGuess = event.key;
     //Make if statements for a user and computer that shows which key is pressed on either sides.
-
+    if ((userGuess === computerChoices.length && computerGuess === computerChoices.length)) {
+    }
     //Make if statements where a user's keys is equal to the computers keys.
 
     //Make an else if statement where if the user's keys is not equal to the computer's keys and also attempts count decrease.
