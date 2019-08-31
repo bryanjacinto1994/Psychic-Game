@@ -16,7 +16,11 @@ document.onkeyup = function (event) {
     if ((userGuess === computerChoices.length && computerGuess === computerChoices.length)) {
     }
     //Make if statements where a user's keys is equal to the computers keys.
-
+    if ((userGuess === computerGuess && computerGuess === userGuess)) {
+        wins++;
+        attempts--;
+        guessMade = [];
+    }
     //Make an else if statement where if the user's keys is not equal to the computer's keys and also attempts count decrease.
 
     //Make a statement for when attempts reaches "0", user loses and score resets.
