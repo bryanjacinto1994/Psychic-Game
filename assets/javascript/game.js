@@ -22,7 +22,9 @@ document.onkeyup = function (event) {
         guessMade = [];
     }
     //Make an else if statement where if the user's keys is not equal to the computer's keys and also attempts count decrease.
-
+    else if (userGuess !== computerGuess) {
+        attempts--;
+    }
     //Make a statement for when attempts reaches "0", user loses and score resets.
     //Also a statement for leters that are guessed to be shown and disappear when user=computer.
 
