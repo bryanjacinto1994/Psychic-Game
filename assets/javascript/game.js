@@ -26,13 +26,20 @@ document.onkeyup = function (event) {
         attempts--;
     }
     //Make a statement for when attempts reaches "0", user loses and score resets.
-    //Also a statement for leters that are guessed to be shown and disappear when user=computer.
+    
     if (attempts == 0) {
         attempts = 9; //This resets back to 9 when the attempt reaches 0.
         lose++; //You lose and the score of loss will increment by 1.
         guessMade = []; //Letters guessed.
     }
+    //Also a statement for leters that are guessed to be shown and disappear when user=computer.
+    if (guessMade.indexOf(userGuess) >= 0) {       
+    }
 
+    else {
+        guessMade.push(userGuess);
+        document.getElementById("").innerHTML = guessMade;
+    }
     //Put all IDs and Text-Contents here
 
 };
