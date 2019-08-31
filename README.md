@@ -1,4 +1,7 @@
 # Psychic-Game
+### Links: 
+https://bryanjacinto1994.github.io/Psychic-Game/
+https://github.com/bryanjacinto1994/Psychic-Game
 
 ## Images
 
