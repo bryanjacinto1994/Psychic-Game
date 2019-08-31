@@ -9,9 +9,9 @@ var lettersPressed = lettersPressed;
 //Make a function for when a user press a key, that specific key is pressed.
 document.onkeyup = function (event) {
     //Make a variable computerGuess and a function that randomizes the alphabet letters.
-
+    var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     //Make a variable for the user when a key is pressed via document.onkeyup.
-
+    
     //Make if statements for a user and computer that shows which key is pressed on either sides.
 
     //Make if statements where a user's keys is equal to the computers keys.
