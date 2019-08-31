@@ -17,9 +17,9 @@ document.onkeyup = function (event) {
     }
     //Make if statements where a user's keys is equal to the computers keys.
     if ((userGuess === computerGuess && computerGuess === userGuess)) {
-        wins++; 
-        attempts--;
-        guessMade = [];
+        wins++; //User wins and gets a point which will increment by 1. 
+        attempts--; //attempts number will decrease whenever a key is guessed/pressed.
+        guessMade = []; //letters guessed.
     }
     //Make an else if statement where if the user's keys is not equal to the computer's keys and also attempts count decrease.
     else if (userGuess !== computerGuess) {
@@ -29,16 +29,16 @@ document.onkeyup = function (event) {
     
     if (attempts == 0) {
         attempts = 9; //This resets back to 9 when the attempt reaches 0.
-        lose++; //You lose and the score of loss will increment by 1.
+        lose++; //User lose and the score of loss will increment by 1.
         guessMade = []; //Letters guessed.
     }
     //Also a statement for leters that are guessed to be shown and disappear when user=computer.
     if (guessMade.indexOf(userGuess) >= 0) {       
     }
 
-    else {
+    else { //This shows and pushes the letter keys pressed onto the screen which makes it visible to the user.
         guessMade.push(userGuess);
-        document.getElementById("").innerHTML = guessMade;
+        document.getElementById("letterGuess").innerHTML = guessMade;
     }
     //Put all IDs and Text-Contents here
     var yourGuesses = document.getElementById("your-guesses");
@@ -46,4 +46,10 @@ document.onkeyup = function (event) {
     var youWin = document.getElementById("you-win");
     var youLose = document.getElementById("you-lose");
     var guessesleft = document.getElementById("guesses-left");
+
+    yourGuesses.textContent = "Current Letter Pressed: " + userGuess;
+    computerPressed.textContent = "Current Letter Pressed: " + computerGuess;
+    youWin.textContent = "Your Score: " + wins;
+    youLose.textContent = "Losses: " + lose;
+    guessesleft.textContent = "Your Attempts: " + attempts;
 };
