@@ -17,7 +17,7 @@ document.onkeyup = function (event) {
     }
     //Make if statements where a user's keys is equal to the computers keys.
     if ((userGuess === computerGuess && computerGuess === userGuess)) {
-        wins++;
+        wins++; 
         attempts--;
         guessMade = [];
     }
@@ -27,7 +27,11 @@ document.onkeyup = function (event) {
     }
     //Make a statement for when attempts reaches "0", user loses and score resets.
     //Also a statement for leters that are guessed to be shown and disappear when user=computer.
-
+    if (attempts == 0) {
+        attempts = 9; //This resets back to 9 when the attempt reaches 0.
+        lose++; //You lose and the score of loss will increment by 1.
+        guessMade = []; //Letters guessed.
+    }
 
     //Put all IDs and Text-Contents here
 
