@@ -1,7 +1,11 @@
 //Make a variable name of "computerChoices" and a value of arrays with all 26 letters in the alphabet.
 var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 //Make a variable for each score subjects.
-
+var wins = 0;
+var lose = 0;
+var attempts = 9;
+var guessMade = [];
+var lettersPressed = lettersPressed;
 //Make a function for when a user press a key, that specific key is pressed.
 
 //Make a variable computerGuess and a function that randomizes the alphabet letters.
