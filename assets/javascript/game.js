@@ -41,5 +41,9 @@ document.onkeyup = function (event) {
         document.getElementById("").innerHTML = guessMade;
     }
     //Put all IDs and Text-Contents here
-
+    var yourGuesses = document.getElementById("your-guesses");
+    var computerPressed = document.getElementById("computer-pressed");
+    var youWin = document.getElementById("you-win");
+    var youLose = document.getElementById("you-lose");
+    var guessesleft = document.getElementById("guesses-left");
 };
